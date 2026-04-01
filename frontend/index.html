@@ -1,0 +1,79 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Analbeats Dashboard</title>
+  <link rel="stylesheet" href="/style.css" />
+</head>
+<body>
+  <main class="wrap">
+    <h1>Analbeats Dashboard</h1>
+
+    <section class="card">
+      <h2>Status</h2>
+      <pre id="status">Loading...</pre>
+    </section>
+
+    <section class="card">
+      <h2>Connection</h2>
+      <label>DataPuller URL</label>
+      <input id="datapuller_url" type="text" />
+    </section>
+
+    <section class="card grid">
+      <div>
+        <h2>Hit</h2>
+        <label><input id="hit_enabled" type="checkbox" /> Enabled</label>
+        <label>Toy (required)</label>
+        <select id="hit_toy"></select>
+        <label>Mode</label>
+        <select id="hit_mode">
+          <option value="vibrate">vibrate</option>
+          <option value="oscillate">oscillate</option>
+          <option value="rotate">rotate</option>
+        </select>
+        <label>Intensity <span id="hit_intensity_val"></span></label>
+        <input id="hit_intensity" type="range" min="0" max="1" step="0.01" />
+        <label>Duration (ms)</label>
+        <input id="hit_duration_ms" type="number" min="1" />
+        <label>Cooldown (ms)</label>
+        <input id="hit_cooldown_ms" type="number" min="0" />
+        <button id="test_hit">Test Hit</button>
+      </div>
+
+      <div>
+        <h2>Miss</h2>
+        <label><input id="miss_enabled" type="checkbox" /> Enabled</label>
+        <label>Toy (required)</label>
+        <select id="miss_toy"></select>
+        <label>Mode</label>
+        <select id="miss_mode">
+          <option value="vibrate">vibrate</option>
+          <option value="oscillate">oscillate</option>
+          <option value="rotate">rotate</option>
+        </select>
+        <label>Intensity <span id="miss_intensity_val"></span></label>
+        <input id="miss_intensity" type="range" min="0" max="1" step="0.01" />
+        <label>Duration (ms)</label>
+        <input id="miss_duration_ms" type="number" min="1" />
+        <label>Cooldown (ms)</label>
+        <input id="miss_cooldown_ms" type="number" min="0" />
+        <button id="test_miss">Test Miss</button>
+      </div>
+    </section>
+
+    <section class="card row">
+      <button id="save">Save Config</button>
+      <button id="refresh">Refresh</button>
+    </section>
+
+    <section class="card">
+      <h2>Log</h2>
+      <pre id="log">Ready.</pre>
+    </section>
+  </main>
+
+  <script src="/app.js"></script>
+</body>
+</html>

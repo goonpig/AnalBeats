@@ -1,0 +1,23 @@
+{
+  "datapuller_url": "ws://127.0.0.1:2946/BSDataPuller/LiveData",
+  "reactions": {
+    "miss": {
+      "enabled": true,
+      "toy_name": "JoyHub Faunus",
+      "toy_index": 0,
+      "mode": "oscillate",
+      "intensity": 1.0,
+      "duration_ms": 180,
+      "cooldown_ms": 120
+    },
+    "hit": {
+      "enabled": true,
+      "toy_name": "JoyHub Pearlconch",
+      "toy_index": 2,
+      "mode": "vibrate",
+      "intensity": 0.45,
+      "duration_ms": 80,
+      "cooldown_ms": 35
+    }
+  }
+}

@@ -1,0 +1,18 @@
+[package]
+name = "Analbeats_rust"
+version = "0.6.0"
+edition = "2021"
+
+[dependencies]
+anyhow = "1"
+axum = { version = "0.7", features = ["json"] }
+tokio = { version = "1", features = ["full"] }
+tower-http = { version = "0.6", features = ["fs"] }
+serde = { version = "1", features = ["derive"] }
+serde_json = "1"
+futures-util = "0.3"
+tokio-tungstenite = "0.23"
+
+buttplug = "10"
+buttplug_client = "10"
+buttplug_transport_websocket_tungstenite = "10"
