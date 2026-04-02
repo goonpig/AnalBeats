@@ -1,4 +1,4 @@
-
+demo video - https://www.youtube.com/watch?v=qEZXpI9APYk
 
 
 
@@ -12,7 +12,7 @@ It runs a local web dashboard where you can:
 
 \- see connection status
 
-\- pick a toy for hit and miss reactions
+\- pick a toy for hit and miss reactions (You can have different toys for each reaction, or use the same toy)
 
 \- set mode/intensity/duration/cooldown
 
